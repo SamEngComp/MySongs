@@ -4,18 +4,18 @@ public class Audio {
 
     // PROPERTIES
 
-    String title;
-    int totalReproductions;
-    int totalLikes;
-    int ratings;
+    private String title;
+    private int totalReproductions;
+    private int totalLikes;
+    private int ratings;
 
     // METHODS
 
-    void like() {
+    public void like() {
         this.totalLikes ++;
     }
 
-    void reproduce() {
+    public void reproduce() {
         this.totalReproductions ++;
     }
 
