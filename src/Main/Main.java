@@ -1,5 +1,6 @@
 package Main;
 
+import Domain.Favorite;
 import Domain.Music;
 import Domain.Podcast;
 
@@ -34,6 +35,8 @@ public class Main {
         podcast2.setTitle("Quanto vale essa história?");
         podcast2.setHost("Bianca DellaFancy");
 
+        Favorite myFavorite = new Favorite();
+
         // FICTITIOUS DATA
 
         for (int i = 0; i < 100; i++) {
@@ -55,5 +58,11 @@ public class Main {
             podcast1.like();
             if (i < 1500) podcast2.like();
         }
+
+        myFavorite.add(song1);
+        myFavorite.add(song2);
+
+        myFavorite.add(podcast1);
+        myFavorite.add(podcast2);
     }
 }
