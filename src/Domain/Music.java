@@ -9,7 +9,7 @@ public class Music extends Audio {
     String gender;
 
     // GET AND SET
-    
+
     public String getAlbum() {
         return album;
     }
